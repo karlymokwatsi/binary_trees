@@ -24,7 +24,7 @@ size_t binary_tree_size(const binary_tree_t *tree)
 int checker(const binary_tree_t *tree, size_t lvl, size_t pichu)
 {
 	if (!tree)
-		return (1)
+		return (1);
 	if (lvl >= pichu)
 		return (0);
 	return (checker(tree->left, (lvl * 2) + 1, pichu) && checker(tree->right,
